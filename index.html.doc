@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FADWEB – Mobile Detailing Website Builder</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center center/cover;
+            color: white;
+        }
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            padding: 40px;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.6));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 0;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+        .cta-box {
+            margin-top: 40px;
+            background: rgba(255,255,255,0.08);
+            padding: 40px 50px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            max-width: 450px;
+        }
+        .cta-box p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        .contact-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 14px 28px;
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+        }
+        .contact-links a:hover {
+            background: #0096ff;
+            transform: translateY(-3px);
+        }
+        form {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 14px;
+        }
+        input, textarea {
+            padding: 14px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background: rgba(255,255,255,0.9);
+            font-size: 1rem;
+        }
+        button {
+            padding: 14px;
+            background: #00aaff;
+            color: white;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover {
+            background: #00c0ff;
+            transform: translateY(-3px);
+        }
+            /* Fade-in animations */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .overlay {
+            animation: fadeIn 1.2s ease-out forwards;
+            background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.75));
+        }
+        h1 {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        h2 {
+            animation: fadeInUp 1.4s ease-out forwards;
+        }
+        .cta-box {
+            animation: fadeInUp 1.8s ease-out forwards;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        /* Luxurious Neon-Blue Button */
+        .contact-links a {
+            background: linear-gradient(135deg, #005eff, #00c8ff);
+            box-shadow: 0 0 15px rgba(0,174,255,0.6);
+        }
+        .contact-links a:hover {
+            background: linear-gradient(135deg, #0077ff, #2ae4ff);
+            box-shadow: 0 0 20px rgba(0,190,255,0.8);
+        }
+
+        /* Premium form button */
+        button {
+            background: linear-gradient(135deg, #005eff, #00c8ff);
+            box-shadow: 0 0 12px rgba(0,174,255,0.45);
+        }
+        button:hover {
+            background: linear-gradient(135deg, #007aff, #34e2ff);
+            box-shadow: 0 0 18px rgba(0,190,255,0.7);
+        }
+
+        /* Premium carbon-fibre inspired background overlay */
+        .overlay:before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            opacity: 0.07;
+            pointer-events: none;
+        }
+
+        /* Glossy card feel */
+        .cta-box {
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="hero-text">
+        <h1>FADWEB</h1>
+        <h2>Get Your Mobile Detailing Website for Just £99</h2>
+
+        <div class="cta-box">
+            <p>Professional • Sleek • High-Converting</p>
+            <p>Perfect for Detailing Businesses</p>
+
+            <div class="contact-links">
+                <a href="https://wa.me/">WhatsApp</a>
+                <a href="https://t.me/">Telegram</a>
+            </div>
+
+            <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="4" placeholder="Tell me what you need" required></textarea>
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </div>
+            </div>
+    </div>
+</body>
+</html>
