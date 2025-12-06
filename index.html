@@ -155,6 +155,47 @@
             background: rgba(255,255,255,0.06);
             backdrop-filter: blur(12px);
         }
+            /* Mobile Fixes */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.4rem;
+                line-height: 1.2;
+            }
+            h2 {
+                font-size: 1.2rem;
+                line-height: 1.4;
+            }
+            .overlay {
+                padding: 20px;
+                text-align: center;
+                justify-content: flex-start;
+            }
+            .cta-box {
+                width: 100%;
+                max-width: 90%;
+                padding: 25px 20px;
+                margin-top: 20px;
+            }
+            .contact-links a {
+                width: 100%;
+                margin: 8px 0;
+                padding: 12px;
+                font-size: 1rem;
+            }
+            input, textarea {
+                width: 100%;
+                font-size: 1rem;
+            }
+            button {
+                width: 100%;
+                font-size: 1rem;
+                padding: 12px;
+            }
+            .hero-text {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -183,4 +224,3 @@
     </div>
 </body>
 </html>
-
