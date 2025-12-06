@@ -157,10 +157,53 @@
         }
             /* Mobile Fixes */
         @media (max-width: 600px) {
-            h1 {
-                font-size: 2.4rem;
-                line-height: 1.2;
+            body, html {
+                overflow-x: hidden !important;
+                margin: 0;
+                padding: 0;
             }
+            .overlay {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            h1 {
+                font-size: 2.2rem;
+                text-align: center;
+            }
+            h2 {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+            .cta-box {
+                width: 100% !important;
+                max-width: 360px !important;
+                margin: 0 auto;
+                padding: 20px;
+                border-radius: 14px;
+                box-sizing: border-box;
+            }
+            form {
+                width: 100% !important;
+            }
+            input, textarea, button {
+                width: 100% !important;
+                box-sizing: border-box;
+            }
+            .contact-links {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact-links a {
+                width: 100% !important;
+                text-align: center;
+                padding: 12px;
+            }
+        }
             h2 {
                 font-size: 1.2rem;
                 line-height: 1.4;
@@ -209,8 +252,8 @@
             <p>Perfect for Detailing Businesses</p>
 
             <div class="contact-links">
-                <a href="https://wa.me/+447818974289">WhatsApp</a>
-                <a href="https://t.me/fadweb">Telegram</a>
+                <a href="https://wa.me/">WhatsApp</a>
+                <a href="https://t.me/">Telegram</a>
             </div>
 
             <form action="mailto:your@email.com" method="POST" enctype="text/plain">
